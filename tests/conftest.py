@@ -7,5 +7,5 @@ def client():
     app.config.update({
         "TESTING": True,
     })
-    client = app.test_client()
-    yield client
+    result = app.test_client()
+    yield result
